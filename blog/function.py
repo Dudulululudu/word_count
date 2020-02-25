@@ -20,3 +20,6 @@ def count(request):
     total_count=len(user_text)
     return render(request,'count.html',{'count':total_count,'text':user_text,'wordict':word_dict,'sorted':sorted_dict})
     #在render中 可以通过字典的方式传递信息给html
+
+def about(request):
+    return render(request,'about.html')
